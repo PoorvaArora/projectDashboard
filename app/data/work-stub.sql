@@ -11,6 +11,7 @@ CREATE TABLE Work (
   completion_estimate int NOT NULL CHECK(0 <= completion_estimate <= 100)
 );
 
+
 -- TRIGGERS
 CREATE TRIGGER sumWorkToTask
 AFTER INSERT ON Work
